@@ -1,0 +1,45 @@
+---
+import Badge from "../components/Badge.astro";
+
+import SocialIcons from "../components/SocialIcons.astro";
+
+import GitHubIcon from "../components/icons/GitHub.astro";
+import LinkedinIcon from "../components/icons/Linkedin.astro";
+
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="Panito">
+  <main>
+    <section class="w-full mx-auto lg:w-[740px] py-44">
+      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-8">
+        Hola, soy Joaquin <a
+          href="https://www.linkedin.com/in/calderonsalazarjoaquin/"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge> Disponible para trabajar </Badge>
+        </a>
+      </h1>
+      <h2 class="text-2xl opacity-80 text-wrap">
+        +1 de experiencia. Desarrollador web Front-End. De Lima, Perú 🇵🇪.
+        <span class="text-yellow-100"
+          >Me especializo en desarrollar soluciones únicas.
+        </span>
+      </h2>
+
+      <nav class="flex gap-x-2 mt-6">
+        <SocialIcons href="https://github.com/Panitou">
+          <GitHubIcon class="w-6 h-6" />
+          GitHub
+        </SocialIcons>
+        <SocialIcons href="https://www.linkedin.com/in/calderonsalazarjoaquin/">
+          <LinkedinIcon class="w-6 h-6" />
+          Linkedin
+        </SocialIcons>
+      </nav>
+    </section>
+  </main>
+</Layout>
