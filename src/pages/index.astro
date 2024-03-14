@@ -1,26 +1,38 @@
 ---
 import Badge from "../components/Badge.astro";
+import PanitoLogo from "../assets/logo-panito.jpg";
 
 import SocialIcons from "../components/SocialIcons.astro";
+
+import Footer from "../components/Footer.astro";
 
 import GitHubIcon from "../components/icons/GitHub.astro";
 import LinkedinIcon from "../components/icons/Linkedin.astro";
 import InstagramIcon from "../components/icons/Instagram.astro";
 import EmailIcon from "../components/icons/Email.astro";
 import Suitecase from "../components/icons/Suitcase.astro";
+import CodeIcon from "../components/icons/CodeIcon.astro";
 
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Experience from "../components/Experience.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
   title="Portafolio de Panito - Desarrollador Front-End"
   description="Desarrollador Front-End, especializado en HTML, CSS, Tailwind, Astro, Python, MySQL, SQLServer"
 >
-  <main>
+  <main class="mx-4">
     <section class="w-full mx-auto lg:w-[740px] pt-48 pb-20">
-      <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-8">
+      <img
+        class="rounded-full w-12 h-12 mb-4"
+        src={PanitoLogo.src}
+        alt="panito-logo"
+      />
+      <h1
+        class="text-white text-3xl md:text4xl lg:text-5xl font-bold flex flex-row gap-x-4 lg:pb-8"
+      >
         Hola, soy Joaquin <a
           href="https://www.linkedin.com/in/calderonsalazarjoaquin/"
           target="_blank"
@@ -30,28 +42,28 @@ import Experience from "../components/Experience.astro";
           <Badge> Disponible para trabajar </Badge>
         </a>
       </h1>
-      <h2 class="text-2xl opacity-80 text-wrap">
+      <h2 class="text-xl lg:text-2xl text-wrap max-w-[700px]">
         +1 de experiencia. Desarrollador web Front-End. De Lima, Perú 🇵🇪.
-        <span class="text-yellow-100"
+        <span class="text-yellow-200/90"
           >Me especializo en desarrollar soluciones únicas.
         </span>
       </h2>
 
-      <nav class="flex gap-x-4 mt-6">
+      <nav class="flex gap-4 mt-6 flex-wrap">
         <SocialIcons href="https://github.com/Panitou">
-          <GitHubIcon class="w-6 h-6" />
+          <GitHubIcon class="size-4 md:size-6" />
           GitHub
         </SocialIcons>
         <SocialIcons href="https://www.linkedin.com/in/calderonsalazarjoaquin/">
-          <LinkedinIcon class="w-6 h-6" />
+          <LinkedinIcon class="size-4 md:size-6" />
           Linkedin
         </SocialIcons>
         <SocialIcons href="https://www.instagram.com/jc04.ms/">
-          <InstagramIcon class="w-6 h-6" />
+          <InstagramIcon class="size-4 md:size-6" />
           Instagram
         </SocialIcons>
-        <SocialIcons href="https://www.instagram.com/jc04.ms/">
-          <EmailIcon class="w-6 h-6" />
+        <SocialIcons href="mailto:joaco0mr4@gmail.com">
+          <EmailIcon class="size-4 md:size-6" />
           Email
         </SocialIcons>
       </nav>
@@ -64,5 +76,13 @@ import Experience from "../components/Experience.astro";
       </h2>
       <Experience />
     </section>
+    <section id="proyectos" class="w-full mx-auto lg:w-[740px]">
+      <h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+        Proyectos
+      </h2>
+      <Projects />
+    </section>
+    <Footer />
   </main>
 </Layout>
