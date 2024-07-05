@@ -1,41 +1,69 @@
 ---
 //const { title, description, link, github, image, tags } = Astro.props;
-
-import PanitoLogo from "../assets/logo-panito.jpg";
-
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
+import apuntados from "../assets/apuntados.png";
 
 //IconsTags
 import NextJS from "../components/icons/NextJS.astro";
+
+
+import React from "../components/icons/React.astro";
+import Mongodb from "../components/icons/Mongodb.astro";
+import Node from "../components/icons/Nodejs.astro";
+import Express from "../components/icons/Express.astro";
+import HTML from "../components/icons/Html.astro";
 import TailwindCSS from "../components/icons/TailwindCSS.astro";
 ---
 
 <article>
-  <h3 class="text-2xl font-semibold text-yellow-200 mb-2">Proyecto 1</h3>
+  <h3 class="text-2xl font-semibold text-yellow-200 mb-2">Apuntados</h3>
   <p class="text-lg mb-4 text-pretty">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Es una plataforma web diseñada para facilitar la búsqueda y gestión de apuntes académicos. El objetivo principal del proyecto es proporcionar a estudiantes universitarios una herramienta intuitiva y eficiente para encontrar apuntes, filtrarlos según diversos criterios y obtener información detallada sobre cada uno de ellos.
   </p>
   <ul class="flex gap-x-4 flex-row mb-4">
     {
       (
         <li class="flex gap-x-2">
-          <span
+          {/* <span
             class={"flex gap-x-2 rounded-full text-xs bg-[#28333d] py-1 px-2"}
           >
             <NextJS class="size-4" />
             <p>NextJS</p>
-          </span>
+          </span> */}
           <span
             class={"flex gap-x-2 rounded-full text-xs bg-[#28333d] py-1 px-2"}
           >
             <TailwindCSS class="size-4" />
             <p>Tailwind CSS</p>
+          </span>
+          <span
+            class={"flex gap-x-2 rounded-full text-xs bg-[#28333d] py-1 px-2"}
+          >
+            <React class="size-4" />
+            <p>React</p>
+          </span>
+          <span
+            class={"flex gap-x-2 rounded-full text-xs bg-[#28333d] py-1 px-2"}
+          >
+            <HTML class="size-4" />
+            <p>HTML</p>
+          </span>
+          <span
+            class={"flex gap-x-2 rounded-full text-xs bg-[#28333d] py-1 px-2"}
+          >
+            <Express class="size-4" />
+            <p>Express</p>
+          </span>
+          <span
+            class={"flex gap-x-2 rounded-full text-xs bg-[#28333d] py-1 px-2"}
+          >
+            <Node class="size-4" />
+            <p>NodeJs</p>
+          </span>
+          <span
+            class={"flex gap-x-2 rounded-full text-xs bg-[#28333d] py-1 px-2"}
+          >
+            <Mongodb class="size-4" />
+            <p>MongoDB</p>
           </span>
         </li>
       )
@@ -43,12 +71,12 @@ import TailwindCSS from "../components/icons/TailwindCSS.astro";
   </ul>
   <img
     class="rounded-xl shadow-2xl shadow-white/10 mb-9"
-    src={project1.src}
+    src={apuntados.src}
     alt={"Captura de pantalla del proyecto"}
   />
 </article>
 
-<article>
+<!-- <article>
   <h3 class="text-2xl font-semibold text-yellow-200 mb-2">Proyecto 2</h3>
   <p class="text-lg mb-4 text-pretty">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -83,4 +111,4 @@ import TailwindCSS from "../components/icons/TailwindCSS.astro";
     src={project2.src}
     alt={"Captura de pantalla del proyecto"}
   />
-</article>
+</article> -->
